@@ -5,3 +5,4 @@
 5-listfilesdigitonly -- a script that current directory contents in long format, with user id displayed numerically and hidden files
 6-firstdirectory -- a script that creates a directory in another directory
 7-movethatfile -- moves a file from a directory to another directory
+8-firstdelete -- deletes a file in another directory from the current working directory
