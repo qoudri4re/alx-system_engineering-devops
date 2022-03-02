@@ -11,3 +11,4 @@
 11-lists --lists all the files including hiddden files in the current directory and the parent of the working directory
 12-file_type -- prints the type of a file
 13-symbolic_link --creates a symbolic link to /bin/ls
+14-copy_html -- script that copies allt the HTML file in the current working directory to the parent of the current working directory but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the wroking directory
