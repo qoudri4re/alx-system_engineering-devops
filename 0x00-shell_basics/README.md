@@ -10,3 +10,4 @@
 10-back -- changes the current directory to the previous one
 11-lists --lists all the files including hiddden files in the current directory and the parent of the working directory
 12-file_type -- prints the type of a file
+13-symbolic_link --creates a symbolic link to /bin/ls
