@@ -8,3 +8,4 @@
 8-firstdelete -- deletes a file in another directory from the current working directory
 9-firstdirdeletion -- deletes a directory from the current working directory
 10-back -- changes the current directory to the previous one
+11-lists --lists all the files including hiddden files in the current directory and the parent of the working directory
