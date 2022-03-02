@@ -16,4 +16,5 @@
 101-clean_emacs --deletes all files in the current working directory that ends with the character ~
 102-tree -- creates three directories in the current directory
 103-commas -- lists all files that ends with a comma
+school.mgc -- detects school data file(files containing SCHOOL at offset 0)
 
