@@ -1,0 +1,3 @@
+#!/bin/bash
+readlink -m 0-current_working_directory
+
