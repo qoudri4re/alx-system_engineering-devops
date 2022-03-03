@@ -11,3 +11,4 @@
                                                                        -other users = all the permissions
 9-John_Doe -- a script that sets the mode of the hello to -rwxr-x-wx9-John_Doe -- a script that sets the mode of the hello to -rwxr-x-wx
 10-mirror_permissions -- sets the mode of file hello the same as olleh's mode
+11-directories_permissions -- a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users 
