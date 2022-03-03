@@ -3,3 +3,4 @@
 2-groups --  a script that prints all the group the current user is part of
 3-new_owner -- a script that changes the owner of the file hello to user betty
 4-empty -- a script that creates an empty file called hello
+5-execute -- a script that adds execute permission to the owner of the file hello
