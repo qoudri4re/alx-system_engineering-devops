@@ -10,3 +10,4 @@
                                                                        -group = no permission at all
                                                                        -other users = all the permissions
 9-John_Doe -- a script that sets the mode of the hello to -rwxr-x-wx9-John_Doe -- a script that sets the mode of the hello to -rwxr-x-wx
+10-mirror_permissions -- sets the mode of file hello the same as olleh's mode
