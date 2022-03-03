@@ -9,4 +9,4 @@
 8-James_Bond -- a script that sets the permission to the file hello as -owner = no permission at all
                                                                        -group = no permission at all
                                                                        -other users = all the permissions
-
+9-John_Doe -- a script that sets the mode of the hello to -rwxr-x-wx9-John_Doe -- a script that sets the mode of the hello to -rwxr-x-wx
