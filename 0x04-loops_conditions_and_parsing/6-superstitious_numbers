@@ -1,19 +1,14 @@
 #!/usr/bin/env bash
-# Prints the numbers from 1 to 20 inclusive
-i=0
-while [[ $i -lt 20 ]]; do
-  case "$i" in
-    "3")
-      echo -e "4\nbad luck from China"
-      ;;
-    "8")
-      echo -e "9\nbad luck from Japan"
-      ;;
-    "16")
-      echo -e "17\nbad luck from Italy"
-      ;;
-    *)
-    echo "$((i + 1))"
-  esac
-  i="$((i + 1))"
+#print numbers from 1-20.
+
+x=1
+while [ $x -le 20 ]
+do
+echo "$x";
+case $x in
+    4) echo "bad luck from China";;
+    9) echo "bad luck from Japan";;
+    17) echo "bad luck from Italy";;
+esac
+    x=$(( x + 1 ))
 done
