@@ -26,7 +26,7 @@ SERVER_CONFIG=\
 		root /var/www/error/;
 		internal;
 	}
-    # shellcheck disable=SC2059
+    # shellcheck disable=SC2154
     add_header X-Served-By $HOSTNAME;
 }"
 bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
