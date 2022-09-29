@@ -1,5 +1,4 @@
-
-bal
+global
         log /dev/log    local0
         log /dev/log    local1 notice
         chroot /var/lib/haproxy
@@ -41,5 +40,23 @@ defaults
 frontend www-http
         bind *:80
         option forwardfor
+        http-request set-header X-Forwarded-Proto http
         default_backend webservers
+        
+frontend www-https
+        bind *:443 ssl crt /etc/haproxy/certs/www.abdulqodiroladimeji.tech.pem
+        acl letsencrypt-acl path_beg /.well-known/acme-challenge/
+        use_backend letsencrypt-backend if letsencrypt-acl
+        http-request set-header X-Forwarded-Proto http
+        default_backend webservers
+
+backend webservers
+        balance roundrobin
+        redirect scheme https if !{ ssl_fc }
+        server webserver1 44.192.247.200:80
+        server webserver2 18.204.220.15:80
+        option httpchk
+
+backend letsencrypt-backend
+        server letsencrypt 127.0.0.1:54321
 
