@@ -40,12 +40,14 @@ defaults
 frontend www-http
         bind *:80
         option forwardfor
+        http-request set-header X-Forwarded-Proto http
         default_backend webservers
         
 frontend www-https
         bind *:443 ssl crt /etc/haproxy/certs/www.abdulqodiroladimeji.tech.pem
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
+        http-request set-header X-Forwarded-Proto http
         default_backend webservers
 
 backend webservers
