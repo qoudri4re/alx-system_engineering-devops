@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-'''gathers data from an api'''
+"""gathers data from an api"""
 import re
 import requests
 import sys
 
 API_URL = 'https://jsonplaceholder.typicode.com'
+'''The API's URL.'''
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:

@@ -1,7 +1,6 @@
-
 #!/usr/bin/python3
-'''A script that gathers data from an API and exports it to a CSV file.
-'''
+"""A script that gathers data from an API and exports it to a CSV file.
+"""
 import re
 import requests
 import sys
